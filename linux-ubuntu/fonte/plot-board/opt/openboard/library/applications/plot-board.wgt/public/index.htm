@@ -1,0 +1,87 @@
+<html ng-app="formularioGrafico">
+<head>
+    <!-- META -->
+    <meta charset="latin-1">
+    <title>Plot-Board</title>
+
+    <!-- CSS -->
+    <!-- Carregando o bootstrap-->
+
+
+    <!-- JS -->
+    <!-- Carregando a biblioteca jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Carregando a biblioteca AngularJS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="angularApp.js"></script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $( function() {
+          $( "#tabs" ).tabs();
+      } );
+  </script>
+  <style type="text/css">
+    textarea {
+      font-size: 10pt !important;
+    } 
+  </style>
+
+</head>
+<!-- DEFINE O CONTROLLER E BUSCA TODOS OS CONTATOS -->
+<body ng-controller="mainController" >
+    <div class="container">
+          <table>
+              <tr>
+                  <td>
+      <form id="formTabs" >
+	<div id="tabs">
+	  <ul>
+	    <li><a href="#tabs-1">Dados</a></li>
+	    <li><a href="#tabs-2">Configurações</a></li>
+	    <li><a href="#tabs-3">Log</a></li>
+	  </ul>
+	  <div id="tabs-1">
+		<textarea rows="15" 
+		    	  cols="50"
+	            	  ng-model="formulario.dados">
+	  	</textarea>
+	  </div>
+	  <div id="tabs-2">
+	  	<textarea id="configuracoesTextArea"
+			  rows="15" 
+		    	  cols="50"
+	            	  ng-model="formulario.configuracoes">
+	  	</textarea>
+		<br/>
+		<input type="button" 
+		       value="Usar o arquivo de dados"
+		       ng-click="adicionarArquivosDados()" />
+
+	  </div>
+	  <div id="tabs-3">
+	  	<textarea rows="15" 
+		    	  cols="50"
+	            	  ng-model="formulario.log">
+	  	</textarea>
+	  </div>
+	</div>
+
+         <input class="ui-button 
+		ui-widget ui-corner-all" 
+		type="submit" 
+		value="Gerar Gráfico" 
+		ng-click="gerarGrafico()"/>
+      </form>
+                  </td>
+                  <td>
+                      <img ng-src="http://127.0.0.1:1185/{{formulario.nomeGrafico}}" />
+                  </td>
+              </tr>
+          </table>
+      </div>
+   </body>
+</html>

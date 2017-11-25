@@ -1,0 +1,8 @@
+Package: plot-Board
+Version: 1.0
+Section: education
+Architecture: amd64
+Installed-Size: 705
+Maintainer: Marlon Assis
+Homepage: https://github.com/marlonassis/plot-board
+Description: Plot-Board eh um widget que auxilia na plotagem de graficos na lousa digital OpenBoard.

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+        version="1.2"
+        width="1024"
+        height="500"
+        ub:resizable="true">     
+   
+		<name>Gnuplot-Board</name>
+		<author href="https://github.com/marlonassis/gnuplot-node.git"
+	            email="marlonassis@gmail.com">Marlon Assis</author>
+		<description>Construtor de gráficos matemáticos utilizando Gnuplot</description>
+		
+		<content src="index.html"/>
+</widget>

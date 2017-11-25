@@ -1,0 +1,8 @@
+[Unit]
+Description = Iniciando o servidor node.js para atender aos requisitos do plot-board.
+
+[Service]
+ExecStart=/usr/local/bin/plot-board.sh start
+
+[Install]
+WantedBy=default.target
