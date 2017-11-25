@@ -1,0 +1,6 @@
+OSX --> brew install gnuplot
+gnuplot-5.2.2.tar.gz --> Ubuntu
+gp522-win64-mingw.exe --> Windows
+
+
+Para utilizar o brew no OSX eh preciso instalar o homebrew 

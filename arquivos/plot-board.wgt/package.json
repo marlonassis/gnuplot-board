@@ -1,0 +1,28 @@
+{
+  "name": "gnuplot-node",
+  "version": "1.0.0",
+  "description": "Projeto de pesquisa para permitir gerar graficos a partir do navegador.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlonassis/gnuplot-node.git"
+  },
+  "keywords": [
+    "gnuplot",
+    "node",
+    "grafico"
+  ],
+  "author": "Marlon Assis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlonassis/gnuplot-node/issues"
+  },
+  "homepage": "https://github.com/marlonassis/gnuplot-node#readme",
+  "dependencies": {
+    "formidable": "^1.1.1"
+  }
+}
